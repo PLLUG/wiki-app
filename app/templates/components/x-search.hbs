@@ -1,0 +1,11 @@
+{{yield}}
+
+<div>
+  {{input value=q key-up="searchWiki" placeholder="Search ..."}}
+</div>
+
+<div>
+{{#if q}}
+  <p>Search by: {{q}}</p>
+{{/if}}
+</div>

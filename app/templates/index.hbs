@@ -1,0 +1,17 @@
+{{outlet}}
+
+<div class="centered">
+  {{x-search search="search"}}
+
+
+  <div class="results">
+    {{#if items}}
+      <h2>Results</h2>
+    {{/if}}
+    {{#each items as |item|}}
+      <p><a href="{{item}}" target="_blank">{{item}}</a></p>
+    {{else}}
+      <p>Has no items</p>
+    {{/each}}
+  </div>
+</div>
